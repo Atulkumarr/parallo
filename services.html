@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parollo -Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services.css">
+
+</head>
+
+<body>
+    <!-- <section class="bg-image"> -->
+    <div class="wrapper" class="parallax-window" data-parallax="scroll" data-image-src="images/bg-01.jpg">
+
+        <!-- Navigation -->
+        <header class="flex-box">
+            <div class="logo">
+                <span class="fas fa-pen"></span>
+                <div class="logo-text">
+                    <h1>PARALLO</h1>
+                    <p>new app landing page</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="icon ">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="icon">About</a>
+                    </li>
+                    <li class="active">
+                        <a href="services.html" class="icon active">Services</a>
+                    </li>
+                    <li>
+                        <a href="testimonial.html" class="icon  ">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="icon ">Contact</a>
+                    </li>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </header>
+
+
+
+        <!-- section-2 -->
+        <section class="section-2-bg fix-width">
+            <div class="section-2">
+                <div class="section-2-content">
+                    <h1>OUR SERVICES</h1>
+                    <p>This is a parallax movement background image "coffee glass". Aliquam egestas lectus semper enim malesuada, in convallis nunc sagittis. Pellentesque quis tellus vel tortor malesuada egestas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- scetion-3 -->
+        <section class="section-3-main-box fix-width">
+            <div class="section-3">
+                <p class="margin">Aenean convallis justo purus, id pulvinar enim finibus vitae. Fusce et bibendum nisi, vitae mollis turpis. Aliquam tellus mi, maximus vel orci imperdiet, convallis cursus tortor. Donec sollicitudin metus sit amet nisl rhoncus, id ultrices
+                    risus interdum. Proin mollis nulla nulla, ac cursus enim ornare a. Cras quis porta lectus. Pellentesque eu ultrices arcu. Proin ac tristique dui. Praesent mi odio, aliquam ac leo sit amet, dictum sodales diam. Quisque commodo, orci</p>
+                <p>
+                    eget suscipit vestibulum, metus orci fringilla urna, eget dignissim justo odio sit amet tellus. Morbi dapibus molestie massa nec congue. Etiam lacinia pretium psuere. Integer sodales porttitor lobortis. Nam vestibulum vestibulum lectus non pulvinar. Vivamus
+                    eget sapien vitae magna lobortis rhoncus molestie sit amet est. Fusce ultrices justo vitae blandit consequat.</p>
+            </div>
+        </section>
+
+        <!-- Section-4 -->
+        <section class="section-4-main-box flex-box fix-width">
+            <div class="section-4">
+                <div onclick="function1()" class="flex btn marg">
+                    <i class="fab fa-canadian-maple-leaf"></i>
+                    <h1>SERVICE TAB 1</h1>
+                </div>
+                <div onclick="function2()" class="flex btn marg">
+                    <i class="fab fa-pagelines"></i>
+                    <h1>SERVICE TAB 2</h1>
+                </div>
+                <div onclick="function3()" class="flex btn marg">
+                    <i class="fas fa-leaf"></i>
+                    <h1>SERVICE TAB 3</h1>
+                </div>
+            </div>
+            <div class="section-4-content">
+                <h1 id="heading">Service Tab One</h1>
+                <p id="one">
+                    Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit
+                    sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna.
+                </p>
+                <p id="two">
+                    Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit
+                    sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright © 2020 App Landing Page. Designed by <span class="blue">TemplateMo</span></p>
+        </footer>
+        </section>
+
+
+    </div>
+
+    <!-- for parallax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js/parallax.min.js"></script>
+
+
+    <!-- for navigation & Click-->
+    <script src="js/jquery 3.5.1.js"></script>
+    <script>
+        $("nav i").click(function() {
+            $("nav ul").slideToggle();
+        });
+
+        function function1() {
+            document.getElementById("heading").innerHTML = "Service Tab One";
+            document.getElementById("one").innerHTML = "Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna";
+            document.getElementById("two").innerHTML = "Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna.";
+        }
+
+        function function2() {
+            document.getElementById("heading").innerHTML = "Service Tab Two";
+            document.getElementById("one").innerHTML = "Nam consequat, leo vitae aliquet dignissim, leo est laoreet nibh, nec dictum libero justo vitae dolor. Donec tristique eros at nisi elementum efficitur. Proin ornare feugiat ex placerat pellenteqsue. Nulla convallis est volutpat ex ultrices facilisis.";
+            document.getElementById("two").innerHTML = "Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna.";
+        }
+
+        function function3() {
+            document.getElementById("heading").innerHTML = "Service Tab Three";
+            document.getElementById("one").innerHTML = "Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac blandit. Aliquam vel pulvinar purus, sit amet luctus urna. Nulla convallis est volutpat ex ultrices facilisis.";
+            document.getElementById("two").innerHTML = "Etiam egestas metus vitae est interdum, in eleifend nunc volutpat. Aliquam molestie ipsum quis suscipit lacinia. Nam consequat, leo vitae aliquet dignissim, leo est laoreet nibh, nec dictum libero justo vitae dolor. Donec tristique eros at nisi elementum efficitur. Proin ornare feugiat ex placerat pellenteqsue.";
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
